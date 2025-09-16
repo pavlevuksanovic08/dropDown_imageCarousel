@@ -12,9 +12,22 @@ import image8 from "./images/8.jpg";
 import image9 from "./images/9.jpg";
 import image10 from "./images/10.jpg";
 
+const images = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+];
 
-const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
-
-new DropDownMenu(document.querySelector(".dropdown-btn"), document.querySelector(".dropdown"));
+new DropDownMenu(
+  document.querySelector(".dropdown-btn"),
+  document.querySelector(".dropdown"),
+);
 
 new ImageCarousel(images, document.getElementById("image-carousel"));
